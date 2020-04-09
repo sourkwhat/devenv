@@ -1,0 +1,18 @@
+#! /usr/bin/env bash
+
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-yzane.markdown-pdf
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension heptio.jsonnet
+code --install-extension mjmcloug.vscode-elixir
+sudo usermod -aG docker $USER
+sudo setfacl -m user:$USER:rw /var/run/docker.sock
