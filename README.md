@@ -10,3 +10,7 @@ install_packages
 rootless_docker
 ---------------
 * Adds a docker group and adds the current user to that group. Docker commands no longer require sudo. Allows use of the VS Code Docker extension without running VS Code as root.
+
+install_elixir
+--------------
+* Installs Erlang, Elixir, and Phoenix (fixed version, bump inside script if you want)
