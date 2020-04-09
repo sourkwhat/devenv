@@ -3,8 +3,8 @@
 # Install prerequisites
 sudo apt update && apt upgrade -y
 
-# Install vim
-sudo apt install -y vim
+# Install nice things
+sudo apt install -y vim tree tmux
 
 # Install Docker
 sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
@@ -28,7 +28,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
-code --install-extension ms-yzane.markdown-pdf
+code --install-extension yzane.markdown-pdf
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension heptio.jsonnet
 code --install-extension mjmcloug.vscode-elixir
